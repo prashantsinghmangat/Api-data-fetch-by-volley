@@ -1,4 +1,4 @@
-package com.demotxt.myapp.myapplication.activities;
+package com.demotxt.myapp.myapplication.Dashboardbmr.activities;
 
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;

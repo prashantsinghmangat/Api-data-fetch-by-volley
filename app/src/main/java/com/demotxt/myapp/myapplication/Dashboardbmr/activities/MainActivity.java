@@ -1,4 +1,4 @@
-package com.demotxt.myapp.myapplication.activities;
+package com.demotxt.myapp.myapplication.Dashboardbmr.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,8 +11,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.demotxt.myapp.myapplication.R;
-import com.demotxt.myapp.myapplication.adapters.RecyclerViewAdapter;
-import com.demotxt.myapp.myapplication.model.Anime;
+import com.demotxt.myapp.myapplication.Dashboardbmr.adapters.RecyclerViewAdapter;
+import com.demotxt.myapp.myapplication.Dashboardbmr.model.Anime;
 
 import org.json.JSONArray;
 import org.json.JSONException;

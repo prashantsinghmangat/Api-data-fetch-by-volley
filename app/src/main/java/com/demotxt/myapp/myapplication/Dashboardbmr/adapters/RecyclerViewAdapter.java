@@ -1,4 +1,4 @@
-package com.demotxt.myapp.myapplication.adapters;
+package com.demotxt.myapp.myapplication.Dashboardbmr.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,12 +9,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.demotxt.myapp.myapplication.activities.AnimeActivity;
-import com.demotxt.myapp.myapplication.model.Anime;
+import com.demotxt.myapp.myapplication.Dashboardbmr.activities.AnimeActivity;
+import com.demotxt.myapp.myapplication.Dashboardbmr.model.Anime;
 import com.demotxt.myapp.myapplication.R ;
 
 import java.util.List;

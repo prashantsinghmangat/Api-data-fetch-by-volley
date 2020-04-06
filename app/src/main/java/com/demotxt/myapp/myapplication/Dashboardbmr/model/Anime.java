@@ -1,4 +1,4 @@
-package com.demotxt.myapp.myapplication.model;
+package com.demotxt.myapp.myapplication.Dashboardbmr.model;
 
 /**
  * Created by Aws on 11/03/2018.
