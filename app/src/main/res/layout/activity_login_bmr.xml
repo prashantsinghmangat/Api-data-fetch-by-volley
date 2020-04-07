@@ -60,37 +60,59 @@
 		android:gravity="center"
 		android:layout_margin="16dp">
 
-		<EditText
-			android:id="@+id/etName"
+		<android.support.design.widget.TextInputLayout
+			android:id="@+id/Usernameshow"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="344dp"
-			android:drawableLeft="@drawable/ic_person_login"
-			android:drawablePadding="10dp"
-			android:ems="10"
-			android:hint="Username"
-			android:inputType="textPersonName"
-			android:textColor="#000000"
-			app:layout_constraintHorizontal_bias="0.235"
-			app:layout_constraintStart_toStartOf="parent" />
+			android:layout_marginTop="344dp">
 
-		<EditText
-			android:id="@+id/etPassword"
+			<android.support.design.widget.TextInputEditText
+				android:id="@+id/etName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="344dp"
+				android:drawableLeft="@drawable/ic_person_login"
+				android:drawablePadding="10dp"
+				android:ems="10"
+				android:hint="Username"
+				android:inputType="textPersonName"
+				android:textColor="#000000"
+				app:layout_constraintHorizontal_bias="0.235"
+				app:layout_constraintStart_toStartOf="parent" />
+
+		</android.support.design.widget.TextInputLayout>
+
+
+		<android.support.design.widget.TextInputLayout
+			android:id="@+id/passwordshow"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="400dp"
-			android:drawableLeft="@drawable/ic_lock_locklogin"
-			android:drawablePadding="10dp"
-			android:ems="10"
-			android:hint="Password"
-			android:inputType="textPassword"
-			android:textColor="#000000" />
+			app:passwordToggleEnabled="true"
+			android:layout_marginTop="400dp">
+
+			<android.support.design.widget.TextInputEditText
+				android:id="@+id/etPassword"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="400dp"
+				android:drawableStart="@drawable/ic_lock_locklogin"
+				android:drawableLeft="@drawable/ic_lock_locklogin"
+				android:drawablePadding="10dp"
+				android:ems="10"
+				android:hint="Password"
+				android:inputType="textPassword"
+				android:textColor="#000000">
+			</android.support.design.widget.TextInputEditText>
+
+		</android.support.design.widget.TextInputLayout>
+
+
 
 		<TextView
 			android:id="@+id/forgetidpass"
 			android:layout_width="196dp"
 			android:layout_height="wrap_content"
-			android:layout_below="@+id/etPassword"
+			android:layout_below="@+id/passwordshow"
 			android:layout_alignParentEnd="true"
 			android:layout_alignParentRight="true"
 			android:layout_marginTop="16dp"
@@ -113,10 +135,18 @@
 			android:layout_marginTop="500dp"
 			android:layout_marginEnd="120dp"
 			android:layout_marginRight="120dp"
-			android:background="@drawable/button_rounded"
+			android:background="#9C27B0"
 			android:text="Login"
 			android:textColor="#F8F8FA"
-			app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+			app:layout_constraintTop_toBottomOf="@+id/passwordshow" />
+
+		<ProgressBar
+			style="?android:attr/progressBarStyleLarge"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/progressBar"
+			android:progressDrawable="@drawable/circular_progress_bar"
+			 />
 
 		<TextView
 			android:id="@+id/tvInfo"
